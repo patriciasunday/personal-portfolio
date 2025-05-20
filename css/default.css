@@ -1,0 +1,89 @@
+/*
+Author: Patricia Sunday
+Desc: Style sheet file for entire portfolio default
+For: Assignment 1
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+*{
+    background-color: #47663B;
+    color: white;
+    font-family: Nunito;
+    margin: 0px; /*to reset default screen margins*/
+}
+
+/*to style body as full height of webpage and separate body children(header,main,footer)*/
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 10px;
+    margin: 50px;
+}
+
+/*to indicate visited links*/
+nav > a:visited{
+    color: #EED3B1;
+}
+
+/*to indicate link hovering*/
+nav > a:hover{
+    color: #E8ECD7;
+}
+
+/*to indicate link clicking*/
+nav > a:active{
+    color:white;
+}
+
+h1{
+    margin-left: 5%;
+}
+
+/*to space heading and main content*/
+main{
+    margin-left: 5%;
+    flex-grow: 1; /*make footer stay at bottom of page by letting main take up all available page space*/
+}
+
+footer, footer *{
+    background-color: #1F4529; 
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 20px 50px;
+}
+
+/*to align footer logos to the right*/
+.footer-images{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+/*to resize footer logos equally*/
+footer img {
+    width: 1.5rem;
+}
+
+/*to style text as headings*/
+.heading2 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.heading3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}

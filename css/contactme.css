@@ -1,0 +1,56 @@
+/*
+Author: Patricia Sunday
+Desc: Style sheet file for contact me form in portfolio
+For: Assignment 1-contactme.html
+*/
+
+/*to align form and its children*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+}
+
+/*to style name & email as a row*/
+.input-row {
+    display: flex;
+    gap: 30px;
+}
+
+/*to align input labels with their boxes*/
+.input-combo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.message-combo {
+    display: flex;
+    flex-direction: column;
+}
+
+/*styling preferences*/
+input, textarea {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+textarea {
+    min-height: 250px;
+    resize:vertical;
+}
+
+label{
+    font-size: 15pt;
+}
+
+/*responsive design*/
+@media (max-width: 600px){
+    .input-row {
+        flex-direction: column;
+    }
+}

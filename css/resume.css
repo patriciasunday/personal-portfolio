@@ -1,0 +1,86 @@
+/*
+Author: Patricia Sunday
+Desc: Style sheet file for homepage in portfolio
+For: Assignment 1-homepage.html
+*/
+
+/*to style main content as in wireframe*/
+main{
+    margin: 0% 2%;
+    display: flex;
+    gap: 3%
+}
+
+#resume-header{
+    text-align: center;
+    border: 1px solid black;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 15% 0.5%;
+    background-color: white
+}
+
+#resume-header *{
+    background-color: white;
+    color: black;
+}
+
+/*to align education & skills sections as in wireframe*/
+.resume-main {
+    display: flex
+}
+
+.resume-content > *{
+    margin-bottom: 30px;
+}
+
+header p{
+    text-align: center;
+}
+
+/*more personal styling preferences*/
+.education, .skills{
+    border: 1px solid black;
+    padding: 1%;
+    margin-right: 2%;
+    max-height: fit-content;
+}
+
+.education{
+    max-width: 400px;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+/*responsive design*/
+@media (max-width: 768px) {
+    /*to stack resume header & content instead*/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /*to stack education & skills instead*/
+    .resume-main {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    #resume-header{
+        max-height: fit-content;
+        max-width: 100%;
+        padding: 1%;
+    }
+
+    .education, .skills {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .resume-content > p{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+}
