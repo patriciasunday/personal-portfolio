@@ -1,8 +1,5 @@
 <!--
 Code written by Patricia Sunday
-Student Number: 041145763
-Assignment: 1
-Date: March 4th, 2025
 Purpose: this is the homepage for my portfolio
 -->
 
@@ -14,16 +11,18 @@ Purpose: this is the homepage for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Homepage for portfolio">
         <meta name="keywords" content="homepage, portfolio, programming, patricia sunday">
-        <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/homepage.css">
+        <link rel="stylesheet" href="../css/output.css">
     </head>
     <body>
-        <?php require "header.php"; ?>
+        <header>
+            <?php require "nav.php"; ?>
+             <img src="../images/headshot.png" alt="Circle-shaped headshot picture of myself">
+             <h1>Patricia Sunday</h1>
+        </header>
         <main>
             <div class="self-intro">
                 <!-- personal info section -->
                 <div class="personal-info">
-                    <img src="../images/headshot.jpg" alt="Headshot picture of myself">
                     <div class="personal-info-box">
                         <h2>About Me</h2>
                         <ul>

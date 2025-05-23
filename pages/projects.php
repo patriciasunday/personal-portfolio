@@ -1,10 +1,5 @@
-<!--Self-Reference List
-[1] P. Sunday. (2025).  GEP1001 Sample Resume: Academic Projects [Word/PDF Document]. Available: upon request.
-
+<!--
 Code written by Patricia Sunday
-Student Number: 041145763
-Assignment: 1
-Date: March 4th, 2025
 Purpose: this is the projects page for my portfolio
 -->
 <!DOCTYPE html>
@@ -15,14 +10,14 @@ Purpose: this is the projects page for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Resume page  for portfolio">
         <meta name="keywords" content="resume, cv, portfolio, programming">
-        <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/projects.css">
+        <link rel="stylesheet" href="../css/output.css">
         <script src="../scripts/projects.js" defer></script>
     </head>
     <body>
-        <?php require "header.php"; ?>
-            <!--TODO:style differently. this used to be place in header to style separately from main-->
+       <header>
+            <?php require "nav.php"; ?>
             <p>Click project to see or close details</p>
+        </header>
 
         <main>
             <button id="back">&lt;</button>

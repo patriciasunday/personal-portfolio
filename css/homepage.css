@@ -1,7 +1,7 @@
 /*
 Author: Patricia Sunday
-Desc: Style sheet file for homepage in portfolio
-For: Assignment 1-homepage.html
+Description: Style sheet file for homepage in portfolio
+For: index.php
 */
 
 .self-intro{
@@ -12,12 +12,16 @@ For: Assignment 1-homepage.html
 }
 
 /*to size & style images*/
-.self-intro img {
-    max-width: 250px;
-    object-fit: cover;
-    border: 1px solid black;
+header img {
+    margin-left: 40%;
+    max-width: 125px;
+    border: 1px solid #E2C6B6;
+    border-radius: 50%;
 }
 
+header h1{
+    margin-left: 32%;
+}
 /*to align groups with corresponding images*/
 .personal-info,.college-info{
     display: flex;
@@ -27,15 +31,16 @@ For: Assignment 1-homepage.html
 /*to style boxes surrounding text*/
 .personal-info-box, .college-info-box {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #E2C6B6;
     padding: 10px;
     width: 85%;
-    margin-right: 5%;;
+    margin-right: 5%;
+    font-family;
 }
 
 /*to style text in boxes*/
 .personal-info-box *, .college-info-box *{
-    color:black;
+    color: #E2C6B6;
     background-color: white;
     margin: 10px 0px;
 }

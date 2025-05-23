@@ -1,9 +1,6 @@
 <!--
 Code written by Patricia Sunday
-Student Number: 041145763
-Assignment: 1
-Date: March 4th, 2025
-Purpose: tshis is the contact page for my portfolio
+Purpose: this is the contact page for my portfolio
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +10,13 @@ Purpose: tshis is the contact page for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Contact form for portfolio">
         <meta name="keywords" content="connect, portfolio, contact, contact me, message, email, form">
-       <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/contactme.css">
+        <link rel="stylesheet" href="../css/output.css">
     </head>
 
     <body>
-        <?php require "header.php"; ?>
-
+        <header>
+            <?php require "nav.php"; ?>
+        </header>
         <main>
             <!--contact form, for name, email and message-->
             <form>

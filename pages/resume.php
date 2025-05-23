@@ -1,12 +1,5 @@
-<!--Self-Reference List
-[1] P. Sunday. (2025).  GEP1001 Sample Resume: Education [Word/PDF Document]. Available: upon request.
-[2] P. Sunday. (2025).  GEP1001 Sample Resume: Program-Related Skills [Word/PDF Document]. Available: upon request.
-[3] P. Sunday. (2025).  GEP1001 Sample Resume: Additional and Soft Skills [Word/PDF Document]. Available: upon request.
-
+<!--
 Code written by Patricia Sunday
-Student Number: 041145763
-Assignment: 1
-Date: March 4th, 2025
 Purpose: this is the resume page for my portfolio
 -->
 
@@ -18,11 +11,10 @@ Purpose: this is the resume page for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Resume page  for portfolio">
         <meta name="keywords" content="resume, cv, portfolio, programming">
-        <link rel="stylesheet" href="../css/default.css">
-        <link rel="stylesheet" href="../css/resume.css">
+        <link rel="stylesheet" href="../css/output.css">
     </head>
     <body>
-        <?php require "header.php"; ?>
+        <header> <?php require "nav.php";?> </header>
         <main>
             <div id="resume-header">
                 <p class="heading2">Patricia Sunday</p>

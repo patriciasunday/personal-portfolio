@@ -3,13 +3,12 @@ Author: Patricia Sunday
 Desc: Style sheet file for entire portfolio default
 For: Assignment 1
 */
-
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 *{
-    background-color: #47663B;
-    color: white;
-    font-family: Nunito;
+    background-color: white;
+    color: #D6AF99;
     margin: 0px; /*to reset default screen margins*/
 }
 
@@ -29,9 +28,9 @@ nav{
     margin: 50px;
 }
 
-/*to indicate visited links*/
+/*to indicate visited links TODO:change color so its not normal color*/
 nav > a:visited{
-    color: #EED3B1;
+    color: #D6AF99;
 }
 
 /*to indicate link hovering*/
@@ -46,6 +45,11 @@ nav > a:active{
 
 h1{
     margin-left: 5%;
+    font-family: DM Sans;
+}
+
+p{
+    font-family: Roboto;
 }
 
 /*to space heading and main content*/
@@ -55,7 +59,8 @@ main{
 }
 
 footer, footer *{
-    background-color: #1F4529; 
+    background-color: #D6AF99; 
+    color: white;
 }
 
 footer{
@@ -81,9 +86,11 @@ footer img {
 .heading2 {
     font-weight: bold;
     font-size: 1.3rem;
+    font-family: DM Sans;
 }
 
 .heading3 {
     font-weight: bold;
     font-size: 1.2rem;
+    font-family: DM Sans;
 }
