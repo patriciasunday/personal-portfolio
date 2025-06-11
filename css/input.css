@@ -1,5 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One");
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*to resize footer logos equally*/
+.footer-image{
+    @apply w-[1.5rem];
+}
+
+/*for nav & its interactivity*/
+.nav-activity{
+    @apply bg-[var(--primary-color)] p-2 rounded-sm;
+    @apply hover:bg-[var(--primary-contrast)] hover:text-[var(--bg-color)] hover:text-shadow-lg;
+}
+
+/*for custom variables
+ -portfolio palette colors*/
+:root{
+    --bg-color: white;
+    --text-color: #3B1F2B;
+    --subtitle-color: #8C4A6E;
+
+    /*for buttons, header, footer, etc*/
+    --primary-color: #FFE6F0;
+    --primary-contrast: #FF6F91;
+    --accent-color: #FFD166;
+}

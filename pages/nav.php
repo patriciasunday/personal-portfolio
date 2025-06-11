@@ -1,7 +1,8 @@
 <!--universal nav for portfolio-->
-<nav>
-    <a href="index.php">HOME</a> <span class="horizontal-separator">|</span>
-    <a href="resume.php">RESUME</a> <span class="horizontal-separator">|</span>
-    <a href="projects.php">PROJECTS</a><span class="horizontal-separator">|</span>
-    <a href="contactme.php" class="button">CONTACT ME</a>
+<!--styles to indicated visited links, link hovering, and clicking-->
+<nav class="flex flex-row gap-[0.7rem] text-[var(--text-color)] text-[0.8rem] font-bold">
+    <a href="index.php" class="nav-activity">Home</a>
+    <a href="resume.php" class="nav-activity">Resume</a>
+    <a href="projects.php" class="nav-activity">Projects</a>
+    <a href="contactme.php" class="nav-activity">Contact Me</a>
 </nav>
