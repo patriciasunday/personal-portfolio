@@ -17,7 +17,7 @@ Purpose: this is the homepage for my portfolio
     <!--flex-col so main can grow to push footer to bottom of page-->
     <body class="flex flex-col h-[100%] bg-[var(--bg-color)] text-[var(--text-color)] font-[Francois One]">
         <header class="m-8 flex flex-col items-center gap-3">
-            <?php require "nav.php"; ?>
+            <?php require "pages/nav.php"; ?>
             <img src="images/headshot.png" alt="Circle-shaped picture of myself" class="max-w-[100px] rounded-full mt-[10%] border-3 border-[var(--primary-color)]">
             <h1 class="font-bold text-4xl">Patricia Sunday</h1>
             <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">3rd term Computer Programming and Analysis student in Ottawa, Ontario</p>
@@ -62,7 +62,7 @@ Purpose: this is the homepage for my portfolio
                 </div>
             </div>
         </main>
-        <?php require "footer.php"; ?>
+        <?php require "pages/footer.php"; ?>
     </body>
 </html>
 
