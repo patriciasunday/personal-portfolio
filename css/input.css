@@ -8,8 +8,26 @@
 
 /*for nav & its interactivity*/
 .nav-activity{
-    @apply bg-[var(--primary-color)] p-2 rounded-sm;
-    @apply hover:bg-[var(--primary-contrast)] hover:text-[var(--bg-color)] hover:text-shadow-lg;
+    @apply bg-[var(--primary-color)];
+    @apply p-2;
+    @apply rounded-sm;
+    @apply hover:bg-[var(--primary-contrast)];
+    @apply hover:text-[var(--bg-color)];
+    @apply hover:text-shadow-lg;
+}
+
+/*for contactme.php --flex structure for input and corresponding label*/
+.input-group-flex{
+    @apply flex;
+    @apply flex-col;
+}
+
+/*for contactme.php --text-related input borders*/
+.input-border{
+    @apply border-1;
+    @apply border-[var(--primary-color)];
+    @apply rounded-xl;
+    @apply p-2;
 }
 
 /*for custom variables
