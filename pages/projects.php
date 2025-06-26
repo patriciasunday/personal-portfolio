@@ -3,7 +3,7 @@ Code written by Patricia Sunday
 Purpose: this is the projects page for my portfolio
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-[100%]">
     <head>
         <title>Projects</title>
         <meta charset="UTF-8">
@@ -13,59 +13,55 @@ Purpose: this is the projects page for my portfolio
         <link rel="stylesheet" href="../css/output.css">
         <script src="../scripts/projects.js" defer></script>
     </head>
-    <body>
-       <header>
-            <?php require "nav.php"; ?>
-            <p>Click project to see or close details</p>
+    <body class="flex flex-col h-[100%] font-[Francois One] text-[var(--text-color)]">
+       <header class="m-8 flex flex-col gap-3">
+            <div class="self-center"><?php require "nav.php"; ?></div>
+            <hr class="mt-5">
+            <p class="self-center italic">Click project to view or collapse details</p>
         </header>
-
-        <main>
-            <button id="back">&lt;</button>
-            <div class="project">
-                <!--project 1-->
-                <p class="project-title"><span class="heading2">Technical Recommendation Report</span> (Jan 2025 – Present)</p>
-                <div class="project-details">
-                    <ul>
-                        <li class="unlist">Technical Communication-Engineering Technology (ENL2019T), Ottawa, ON</li>
-                        <li>Compiled a 10+ page report on Visible Infrared Imaging Radiometer Suite (VIIRS) as a solution for wildfire prevention in California</li>
-                        <li>Conducted thorough research using credible sources to support and generate key report statements</li>
-                        <li>Utilized Word features, such as Citations & Bibliography, Table of Contents, and Captions for efficient document navigation</li>
-                        <li>Concluded on a well-supported recommendation using step-by-step analysis based on crucial criteria for VIIRS</li>
-                    </ul>
-                    <img src="images/techreport.png" alt="Screenshot of the letter of intent for my report">
-                </div>
+        <main class="grow m-8 flex gap-15 self-center">
+            <button id="back" class="bg-[var(--primary-color)] h-10 w-15 rounded-xl self-center text-[var(--text-color)] font-extrabold">&lt;</button>
+            <!--project 1-->
+            <div class="project border border-[var(--text-color)] rounded-2xl h-90 ">
+                <img src="../images/techreport.png" alt="Letter of intent for the report" class="w-100 h-75 object-cover rounded-t-2xl border-b border-[var(--text-color)]">
+                <ul class="project-details list-disc hidden">
+                    <li class="list-none">Technical Communication-Engineering Technology (ENL2019T), Ottawa, ON</li>
+                    <li>Compiled a 10+ page report on Visible Infrared Imaging Radiometer Suite (VIIRS) as a solution for wildfire prevention in California</li>
+                    <li>Conducted thorough research using credible sources to support and generate key report statements</li>
+                    <li>Utilized Word features, such as Citations & Bibliography, Table of Contents, and Captions for efficient document navigation</li>
+                    <li>Concluded on a well-supported recommendation using step-by-step analysis based on crucial criteria for VIIRS</li>
+                </ul>
+                <p class="project-title text-center font-bold text-lg">Technical Recommendation Report</p>
+                <p class="text-center">(Jan - April 2025)</p>
             </div>
             <!--project 2-->
-            <div class="project">
-                <p class="project-title"><span class="heading2">Fitness Tracker Application</span>  (Feb 2025 – Feb 2025)</p>
-                <div class="project-details">
-                    <ul>
-                        <li class="unlist">Object-Oriented Programming (CST8284), Ottawa, ON</li>
-                        <li>Developed a fitness tracker model using Eclipse IDE for Java Developers</li>
-                        <li>Applied encapsulation to ensure data integrity and access control</li>
-                        <li>Tested program functionality by designing and executing one test class and three Junit test cases</li>
-                        <li>Simulated a real fitness tracker by processing user input and generating relevant personalized information</li>
-                    </ul>
-                    <img src="images/fitnesstracker.png" alt="Screenshot of my code for the Fitness Tracker model">
-                </div>
+            <div class="project border border-[var(--text-color)] rounded-2xl h-90 max-h-90">
+                <img src="../images/fitnesstracker.png" alt="Code for the Fitness Tracker program" class="w-100 h-75 object-cover rounded-t-xl border-b border-[var(--text-color)]">
+                <ul class="project-details list-disc hidden">
+                    <li class="list-none">Object-Oriented Programming (CST8284), Ottawa, ON</li>
+                    <li>Developed a fitness tracker model using Eclipse IDE for Java Developers</li>
+                    <li>Applied encapsulation to ensure data integrity and access control</li>
+                    <li>Tested program functionality by designing and executing one test class and three Junit test cases</li>
+                    <li>Simulated a real fitness tracker by processing user input and generating relevant personalized information</li>
+                </ul>
+                <p class="project-title text-center font-bold text-lg">Fitness Tracker Program</p>
+                <p class="text-center">(Feb 2025)</p>
             </div>
             <!--project 3-->
-            <div class="project">
-                <p class=project-title><span class="heading2">Sewing Shop Management System</span>  (Feb 2025 – Feb 2025)</p>
-                <div class="project-details">
-                    <ul>
-                        <li class="unlist">Database Systems (CST2355), Ottawa, ON</li>
-                        <li>Led a team of three to create a sewing shop management system using SQL Server Management Studio and Microsoft Access</li>
-                        <li>Integrated linked database tables into a user-friendly Access application</li>
-                        <li>Created user-friendly interfaces through queries, forms, and reports for easier data manipulation</li>
-                        <li>Improved database efficiency by establishing entity relationships</li>
-                    </ul>
-                    <img src="images/sewingshopmanagement.png" alt="Screenshot of our application for the Sewing Shop Management system">
-                </div>
+            <div class="project border border-[var(--text-color)] rounded-2xl max-h-90">
+                <img src="../images/sewingshopmanagement.png" alt="Sewing Shop Management system on Microsoft Access" class="w-100 h-75 object-cover rounded-t-xl border-b border-[var(--text-color)]">
+                <ul class="project-details list-disc hidden">
+                    <li class="list-none">Database Systems (CST2355), Ottawa, ON</li>
+                    <li>Led a team of three to create a sewing shop management system using SQL Server Management Studio and Microsoft Access</li>
+                    <li>Integrated linked database tables into a user-friendly Access application</li>
+                    <li>Created user-friendly interfaces through queries, forms, and reports for easier data manipulation</li>
+                    <li>Improved database efficiency by establishing entity relationships</li>
+                </ul>
+                <p class="project-title text-center font-bold text-lg">Sewing Shop Management System</p>
+                <p class="text-center">(Feb 2025)</p>
             </div>
-            <button id="forward">&gt;</button>
+            <button id="forward" class="bg-[var(--primary-color)] h-10 w-15 rounded-xl self-center text-[var(--text-color)] font-extrabold">&gt;</button>
         </main>
-
         <?php require "footer.php"; ?>
     </body>
 </html>
