@@ -4,7 +4,7 @@ Purpose: this is the resume page for my portfolio
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
     <head>
         <title>Resume</title>
         <meta charset="UTF-8">
@@ -13,88 +13,50 @@ Purpose: this is the resume page for my portfolio
         <meta name="keywords" content="resume, cv, portfolio, programming">
         <link rel="stylesheet" href="../css/output.css">
     </head>
-    <body>
-        <header> <?php require "nav.php";?> </header>
-        <main>
-            <div id="resume-header">
-                <p class="heading2">Patricia Sunday</p>
-                <p>(226)-698-6622</p>
-                <p>sund0058@algonquinlive.com</p>
+    <body class="h-full flex flex-col font-[Francois One]">
+        <header class="mt-8 flex flex-col items-center"> 
+            <?php require "nav.php";?> 
+            <p class="mt-5 italic">Click my name to download my full resume</p>
+        </header>
+        <main class="grow m-8 p-8 flex flex-col border-2 border-[var(--text-color)] rounded-xl shadow-xl">
+            <div class="self-center flex flex-col">
+                <a href="../images/test-resume.pdf" download class="self-center hover:text-[var(--primary-contrast)]">
+                    <p class="text-2xl font-extrabold underline">Patricia Sunday</p>
+                </a>    
+                <p class="self-center">(226)-698-6622</p>
+                <p class="self-center">patriciasnsunday@outlook.com</p>
             </div>
-            <div class="resume-content">
-                <!--career objective-->
-                <p>I look forward to refining my administrative database skills while strengthening my ability to balance 
-                    creativity and technicality in application development.</p>
-                <div class="resume-main">
-                    <!--education section-->
-                    <div class="education">
-                        <p class="heading3">Education</p>
-                        <!--See reference [1]-->
-                        <div class="education-basics">
-                            <p><strong>Computer Programming and Analysis Advanced Diploma	2024 - Present</strong></p>
-                            <ul>
-                                <li>Algonquin College, Ottawa, Ontario</li>
-                                <li>Dean's Honours List; GPA 3.93</li>
-                                <li>Selected Courses: Database Systems (SQL, Access, Oracle), Object-Oriented Programming (Java), Web Programming 
-                                    (HTML, CSS, JavaScript, PHP), Operating Systems (Unix/Linux), Technical Communication</li>
-                            </ul>
-                        </div>
-                        <div id="courses-taken"> 
-                            <p><strong>Current Course-Load</strong></p>
-                            <ul>
-                                <li>Object-Oriented Programming (Java II)</li>
-                                <li>Database Systems (SQL II)</li>
-                                <li>Web Programming</li>
-                                <li>Operating Systems Fundamentals (Linux II)</li>
-                                <li>Technical Communication for Engineering Technologies</li>
-                                <li>Co-Op Education and Readiness</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--skills section-->
-                    <div class="skills">
-                        <div class="tech-skills">
-                            <!--See reference [2]-->
-                            <p class="heading3">Technical Skills</p>
-                            <ul>
-                                <li><strong>Database Management & Digital Engines</strong>: Experience working with SQL Server, PostgreSQL (pgAdmin 4), MySQL Workbench 8.0, Microsoft Access, and Oracle
-                                    <ul>
-                                        <li>Created and implemented <span class="bold">SQL databases</span> with efficient interactive objects in Access</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Development & Digital Systems</strong>: Comfortable with Eclipse IDE for Java development and VS Code for web programming, with experience using XAMPP Control Panel for local server setups
-                                    <ul>
-                                        <li>Built <span class="bold">Java applications</span> which are original ideas or mimic existing concepts; Developed web projects</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Operating Systems</strong>: Confident with Windows; Experience operating VMware Workstation Pro to create virtual environments for Unix distributions
-                                    <ul>
-                                        <li>Performed <span class="bold">terminal navigation in Linux</span> to execute shell commands for system management</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Office Tools</strong>: Proficient with Microsoft Office (Excel, Word, PowerPoint, Outlook)
-                                    <ul>
-                                        <li>Leveraged <span class="bold">Microsoft Excel</span> for data analysis and conducted visually appealing easy-to-understand presentations using PowerPoint
-                                    </ul>
-                                </li>
-                                <li>Applied programming knowledge in projects such as Ingredient-Recipe Generator, Mock GameStop Database, and user information form</li>
-                            </ul>
-                        </div>
-                        <div class="soft-skills">                    <!--See reference [3]-->
-                            <p class="heading3">Soft Skills</p>
-                            <ul>
-                                <li>Language: Fluent in English, Beginner French</li>
-                                <li>Ability to exercise a systematic thinking approach, anticipating and solving problems</li>
-                                <li>Accurate use of mathematical operations, accounting for precision loss as well</li>
-                                <li>Communicate through written, oral, and visual forms to accessibly present information</li>
-                                <li>Organizing and navigating document systems</li> 
-                            </ul>
-                        </div>
-                    </div>
+            <p class="mt-4">
+                I'm a 3rd-term student with a strong interest in application and web development.
+                I am available for a  4-8 month co-op starting September 2025, and looking forward to 
+                growing my technical and soft skills in a professional setting!
+            </p> <!--todo:edit resume summary statement-->
+            <div class="md:flex md:gap-10"> <!--for responsive layout-->
+                <div class="mt-4">
+                    <p class="font-bold">Computer Programming and Analysis</p>
+                    <p>Advanced Diploma &nbsp; 2024 - Present (3 years)</p>
+                    <ul class="ml-5 list-disc">
+                        <li>Algonquin College, Ottawa,Ontario</li>
+                        <li>Dean's Honours List; 3.8/4.0</li>
+                    </ul>
+                </div>
+                <div class="mt-4"> 
+                    <p class="font-bold">Current Course-Load</p>
+                    <ul class="ml-5 list-disc">
+                        <li>Object-Oriented Programming with Design Patterns (Java/SQL III)</li>
+                        <li>Mobile GUI Programming</li>
+                        <li>Business Intelligence and Data Analytics</li>
+                        <li>Network Programming</li>
+                        <li>Systems Analysis and Design (Agile)</li>
+                    </ul>
                 </div>
             </div>
         </main>
-
         <?php require "footer.php"; ?>
     </body>
 </html>
+
+<!--todo: rename images folder to resources or media since it now has resume pdf too-->
+<!--todo: change header to mt-8 instead of m-8 in other pages as well-->
+<!--todo: change h-[100%] to h-full in other pages as well-->
+<!--todo: change hyperlink for email icon in footer to use my non-school email-->
