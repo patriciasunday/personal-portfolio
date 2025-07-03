@@ -11,7 +11,7 @@ Purpose: this is the resume page for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Resume page  for portfolio">
         <meta name="keywords" content="resume, cv, portfolio, programming">
-        <link rel="stylesheet" href="../css/output.css">
+        <link rel="stylesheet" href="/styles/output.css">
     </head>
     <body class="h-full flex flex-col font-[Francois One]">
         <header class="mt-8 flex flex-col items-center"> 
@@ -20,7 +20,7 @@ Purpose: this is the resume page for my portfolio
         </header>
         <main class="grow m-8 p-8 flex flex-col border-2 border-[var(--text-color)] rounded-xl shadow-xl">
             <div class="self-center flex flex-col">
-                <a href="../images/test-resume.pdf" download class="self-center hover:text-[var(--primary-contrast)]">
+                <a href="../media/test-resume.pdf" download class="self-center hover:text-[var(--primary-contrast)]">
                     <p class="text-2xl font-extrabold underline">Patricia Sunday</p>
                 </a>    
                 <p class="self-center">(226)-698-6622</p>

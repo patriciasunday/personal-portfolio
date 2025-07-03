@@ -11,7 +11,7 @@ Last Edited: June 24th, 2025
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Contact form for portfolio">
         <meta name="keywords" content="connect, portfolio, contact, contact me, message, email, form">
-        <link rel="stylesheet" href="../css/output.css">
+        <link rel="stylesheet" href="/styles/output.css">
     </head>
     <body class="flex flex-col h-[100%] font-[Francois One] text-[var(--text-color)]">
         <header class="m-8 flex flex-col gap-3">
@@ -27,7 +27,7 @@ Last Edited: June 24th, 2025
             <form id="contact" method="GET" class="flex flex-row gap-6" ><!--todo change method once JS is configured-->
                 <div id="file-upload" class="bg-[var(--primary-color)] rounded-4xl min-w-[45%] input-group-flex justify-center items-center">
                     <label for="file"> 
-                        <img src="../images/fileupload.png" alt="File upload symbol" class="w-[5rem] m-auto">
+                        <img src="../media/fileupload.png" alt="File upload symbol" class="w-[5rem] m-auto">
                         Choose a file to upload
                     </label>
                     <input type="file" id="file" form="contact" class="hidden">

@@ -11,14 +11,14 @@ Purpose: this is the homepage for my portfolio
         <meta name="author" content="Patricia Sunday">
         <meta name="description" content="Homepage for portfolio">
         <meta name="keywords" content="homepage, portfolio, programming, patricia sunday">
-        <link rel="stylesheet" href="../css/output.css">
-        <script src="../scripts/flip-card.js" defer></script>
+        <link rel="stylesheet" href="/styles/output.css">
+        <script src="scripts/flip-card.js" defer></script>
     </head>
     <!--flex-col so main can grow to push footer to bottom of page-->
     <body class="flex flex-col h-[100%] bg-[var(--bg-color)] text-[var(--text-color)] font-[Francois One]">
         <header class="m-8 flex flex-col items-center gap-3">
-            <?php require "nav.php"; ?>
-            <img src="../images/headshot.png" alt="Circle-shaped picture of myself" class="max-w-[100px] rounded-full mt-[10%] border-3 border-[var(--primary-color)]">
+            <?php require "pages/nav.php"; ?>
+            <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="max-w-[100px] rounded-full mt-[10%] border-3 border-[var(--primary-color)]">
             <h1 class="font-bold text-4xl">Patricia Sunday</h1>
             <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">3rd term Computer Programming and Analysis student in Ottawa, Ontario</p>
         </header>
@@ -36,9 +36,9 @@ Purpose: this is the homepage for my portfolio
                                 planning a trip with family, sewing, baking, or curled up and reading a book somewhere cozy
                             </li>
                         </ul>
-                        <img src="../images/me.jpeg" alt="Selfie of myself (Patricia)" class="image-card row-span-2 col-span-3 h-full w-full object-cover rounded-l-4xl border-r-2 border-[var(--bg-color)]">
-                        <img src="../images/greece.jpeg" alt="Sea horizon and trees on Greek island" class="h-full w-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
-                        <img src="../images/cafe.png" alt="The hands of 3 friends and I, holding out drinks from a cafe" class="h-full w-full object-cover rounded-br-4xl ">
+                        <img src="media/me.jpeg" alt="Selfie of myself (Patricia)" class="image-card row-span-2 col-span-3 h-full w-full object-cover rounded-l-4xl border-r-2 border-[var(--bg-color)]">
+                        <img src="media/greece.jpeg" alt="Sea horizon and trees on Greek island" class="h-full w-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
+                        <img src="media/cafe.png" alt="The hands of 3 friends and I, holding out drinks from a cafe" class="h-full w-full object-cover rounded-br-4xl ">
                     </div>
                     <h2>about me</h2>
                 </div>
@@ -54,15 +54,15 @@ Purpose: this is the homepage for my portfolio
                             <li>For more information on the coursework I am taking, visit the
                                 <a href="resume.html#courses-taken">Resume page</a></li>
                         </ul>
-                        <img src="../images/algonquin-b-building.jpg" class="image-card block col-span-3 row-span-2 w-full h-full object-cover rounded-l-4xl border-r-2 border-r-[var(--bg-color)]"> <!--todo: attribute in footer-->
-                        <img src="../images/algonquin-window.jpg" alt="Photograph of the view from an Algonquin classroom window, featuring parking lot, trees, buildings" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-b-[var(--bg-color)]">
-                        <img src="../images/algonquin-window2.jpg" alt="Photograph of the view from an Algonquin staircase window, featuring parking trees and buildings" class="w-full h-full object-cover rounded-br-4xl">
+                        <img src="media/algonquin-b-building.jpg" class="image-card block col-span-3 row-span-2 w-full h-full object-cover rounded-l-4xl border-r-2 border-r-[var(--bg-color)]"> <!--todo: attribute in footer-->
+                        <img src="media/algonquin-window.jpg" alt="Photograph of the view from an Algonquin classroom window, featuring parking lot, trees, buildings" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-b-[var(--bg-color)]">
+                        <img src="media/algonquin-window2.jpg" alt="Photograph of the view from an Algonquin staircase window, featuring parking trees and buildings" class="w-full h-full object-cover rounded-br-4xl">
                     </div>
                     <h2>about my school</h2>
                 </div>
             </div>
         </main>
-        <?php require "footer.php"; ?>
+        <?php require "pages/footer.php"; ?>
     </body>
 </html>
 
