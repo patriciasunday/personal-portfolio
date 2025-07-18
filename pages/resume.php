@@ -20,7 +20,7 @@ Purpose: this is the resume page for my portfolio
         </header>
         <main class="grow m-8 p-8 flex flex-col border-2 border-[var(--text-color)] rounded-xl shadow-xl">
             <div class="self-center flex flex-col">
-                <a href="../media/test-resume.pdf" download class="self-center hover:text-[var(--primary-contrast)]">
+                <a href="../media/resume.pdf" download class="self-center hover:text-[var(--primary-contrast)]">
                     <p class="text-2xl font-extrabold underline">Patricia Sunday</p>
                 </a>    
                 <p class="self-center">(226)-698-6622</p>
