@@ -24,7 +24,7 @@ Last Edited: June 24th, 2025
         </header>
         <main class="grow m-8 mt-0">
             <!--contact form (name, email, message)-->
-            <form id="contact" method="GET" class="flex flex-row gap-6" ><!--todo change method once JS is configured-->
+            <form id="contact" method="GET" action="mailto:patriciasnsunday@outlook.com" class="flex flex-row gap-6" ><!--todo: change method and action once php form handling is configured-->
                 <div id="file-upload" class="bg-[var(--primary-color)] rounded-4xl min-w-[45%] input-group-flex justify-center items-center">
                     <label for="file"> 
                         <img src="../media/fileupload.png" alt="File upload symbol" class="w-[5rem] m-auto">
