@@ -4,6 +4,6 @@
     <div class="flex gap-[20px]">
         <a href="https://www.linkedin.com/in/patricia-sunday" class="footer-image"><img src="/media/linkedinlogo.png" alt="LinkedIn logo"></a>
         <a href="https://github.com/patriciasunday" class=" footer-image"><img src="/media/githublogo.jpg" alt="GitHub logo"></a>
-        <a href="mailto:sund0058@algonquinlive.com" class="footer-image"><img src="/media/emailsymbol.png" alt="Email symbol"></a>
+        <a href="mailto:patriciasnsunday@outlook.com" class="footer-image"><img src="/media/emailsymbol.png" alt="Email symbol"></a>
     </div>
 </footer>

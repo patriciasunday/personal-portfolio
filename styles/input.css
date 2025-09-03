@@ -30,6 +30,16 @@
     @apply p-2;
 }
 
+/*for index.php --text-card-specific styling*/
+.text-card{
+    @apply p-7;
+}
+
+/*for index.php --spaxcing between list items*/
+.list-gap{
+    @apply m-2.5;
+}
+
 /*for custom variables
  -portfolio palette colors*/
 :root{

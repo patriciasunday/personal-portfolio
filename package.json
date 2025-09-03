@@ -20,6 +20,7 @@
   "homepage": "https://github.com/patriciasunday/personal-portfolio#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
+    "tailwind-scrollbar-hide": "^4.0.0",
     "tailwindcss": "^4.1.7"
   }
 }

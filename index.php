@@ -1,10 +1,11 @@
 <!--
 Code written by Patricia Sunday
 Purpose: this is the homepage for my portfolio
+Last Edited: August 30, 2025
 -->
 
 <!DOCTYPE html>
-<html lang="en" class="h-[100%]">
+<html lang="en" class="h-full">
     <head>
         <title>Patricia Sunday Portfolio</title>
         <meta charset="UTF-8">
@@ -20,46 +21,64 @@ Purpose: this is the homepage for my portfolio
             <?php require "pages/nav.php"; ?>
             <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="max-w-[100px] rounded-full mt-[10%] border-3 border-[var(--primary-color)]">
             <h1 class="font-bold text-4xl">Patricia Sunday</h1>
-            <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">3rd term Computer Programming and Analysis student in Ottawa, Ontario</p>
+            <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">Computer Programming and Analysis student in Ottawa, Ontario</p>
         </header>
         <main class="grow m-8">
             <!--flip cards for boards & corresponding text. grid layout for board pics-->
-            <div class="flex flex-row justify-center gap-[30px]">
+            <div class="flex flex-col md:flex-row justify-center gap-[30px]">
                 <!-- personal info section -->
-                <div>
-                    <div class="grid grid-cols-4 grid-rows-2 w-[200px] h-[100px] md:w-[300px] md:h-[175px] lg:w-[500px] lg:h-[250px] rounded-4xl shadow-md transform hover:-translate-y-1 duration-250">
-                        <ul class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-[var(--bg-color)] h-full w-full list-disc">
-                            <li>I'm a computer programming student and aspiring full-stack developer</li>
-                            <li>Currently, I'm interested in...</li> <!--to update-->
-                            <li>
-                                During my free time, I'm likely to be found snacking on candy or chips, partying or having a night in with friends, 
-                                planning a trip with family, sewing, baking, or curled up and reading a book somewhere cozy
-                            </li>
-                        </ul>
-                        <img src="media/me.jpeg" alt="Selfie of myself (Patricia)" class="image-card row-span-2 col-span-3 h-full w-full object-cover rounded-l-4xl border-r-2 border-[var(--bg-color)]">
-                        <img src="media/greece.jpeg" alt="Sea horizon and trees on Greek island" class="h-full w-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
-                        <img src="media/cafe.png" alt="The hands of 3 friends and I, holding out drinks from a cafe" class="h-full w-full object-cover rounded-br-4xl ">
+                <section>
+                    <!--board card-->
+                    <div class="grid grid-cols-4 grid-rows-2 max-w-150 max-h-80 rounded-4xl shadow-md/30 transform hover:-translate-y-1 duration-250 text-sm lg:text-base">
+                        <!--interactive text face-->
+                        <div class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-[var(--bg-color)] h-full w-full overflow-y-auto">
+                            <ul class="list-disc">
+                                <li class="list-gap">I'm a programming student and aspiring full-stack developer</li>
+                                <li class="list-gap">Currently, I'm self-learning Python to become more familiar with software automation and its application in personal projects</li>
+                                <li class="list-gap">
+                                    In my free time, I'm likely to be found...
+                                    <ul class="list-[circle] pl-5">
+                                        <li class="list-gap">Deep into a good book</li>
+                                        <li class="list-gap">Enjoying volunteer work with loved ones</li>
+                                        <li class="list-gap">Scrolling through Pinterest</li>
+                                        <li class="list-gap">Rewatching my favourite shows</li>
+                                        <li class="list-gap">Binging TV or playing games with family</li>
+                                        <li class="list-gap">Partying or having a night in with friends</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="media/me.jpeg" alt="Picture of myself (Patricia)" class="image-card w-full h-full object-cover row-span-2 col-span-3 rounded-l-4xl border-r-2 border-[var(--bg-color)]">
+                        <img src="media/greece.jpeg" alt="Sea horizon and trees on Greek island" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
+                        <img src="media/cafe.png" alt="The hands of 3 friends and I, holding out drinks from a cafe" class="w-full h-full object-cover rounded-br-4xl">
                     </div>
-                    <h2>about me</h2>
-                </div>
+                    <h2 class="text-lg font-medium pl-1">about me</h2>
+                </section>  
 
                 <!-- college info section -->
-                <div>
-                    <div class="grid grid-cols-4 grid-rows-2 w-[200px] h-[100px] md:w-[300px] md:h-[175px] lg:w-[500px] lg:h-[250px] rounded-4xl shadow-md transform hover:-translate-y-1 duration-250">
-                        <ul class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-border-[var(--bg-color)] h-full w-full list-disc">
-                            <li>I am currently a level 02 student in Algonquin College's School of Advanced Technology. I started studying in September 2024</li>
-                            <li>The certification I am studying for is the 3-year advanced diploma in
-                                <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/">Computer Programming and Analysis</a>
-                            </li>
-                            <li>For more information on the coursework I am taking, visit the
-                                <a href="resume.html#courses-taken">Resume page</a></li>
-                        </ul>
-                        <img src="media/algonquin-b-building.jpg" class="image-card block col-span-3 row-span-2 w-full h-full object-cover rounded-l-4xl border-r-2 border-r-[var(--bg-color)]"> <!--todo: attribute in footer-->
-                        <img src="media/algonquin-window.jpg" alt="Photograph of the view from an Algonquin classroom window, featuring parking lot, trees, buildings" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-b-[var(--bg-color)]">
+                <section>
+                    <!--board card-->
+                    <div class="grid grid-cols-4 grid-rows-2 max-w-150 max-h-80 rounded-4xl shadow-md/30 transform hover:-translate-y-1 duration-250 text-sm lg:text-base">
+                        <!--interactive text face-->
+                        <div class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-[var(--bg-color)] h-full w-full overflow-y-auto">
+                            <ul class="list-disc">
+                                <li class="list-gap">Currently, I've completed my 3rd term in Algonquin College's School of Advanced Technology</li>
+                                <li class="list-gap">The certification I am studying for is the 3-year Advanced Diploma in
+                                    <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/">Computer Programming and Analysis</a>
+                                </li>
+                                <li class="list-gap">My studying began in September 2024</li>
+                                <li class="list-gap">
+                                    For more information about my coursework, visit the
+                                    <a href="pages/resume.php" class="font-medium">Resume page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="media/algonquin-ca-building.jpg" alt="Algonquin College Ottawa campus CA building" class="image-card w-full h-full object-cover row-span-2 col-span-3 rounded-l-4xl border-r-2 border-[var(--bg-color)]">
+                        <img src="media/algonquin-window.jpg" alt="Photograph of the view from an Algonquin classroom window, featuring parking lot, trees, buildings" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
                         <img src="media/algonquin-window2.jpg" alt="Photograph of the view from an Algonquin staircase window, featuring parking trees and buildings" class="w-full h-full object-cover rounded-br-4xl">
                     </div>
-                    <h2>about my school</h2>
-                </div>
+                    <h2 class="text-lg font-medium pl-1">about my school</h2>
+                </section>
             </div>
         </main>
         <?php require "pages/footer.php"; ?>
@@ -67,8 +86,6 @@ Purpose: this is the homepage for my portfolio
 </html>
 
 <!--
-todo: fix text-card layout
-todo: fix responsive board sizing
 todo: add boards for each page (3 more boards total)
 todo: add image stack for display pic & background (like pinterest profile on ipad)
 -->
