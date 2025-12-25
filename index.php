@@ -16,10 +16,14 @@ Last Edited: August 30, 2025
         <script src="scripts/flip-card.js" defer></script>
     </head>
     <!--flex-col so main can grow to push footer to bottom of page-->
-    <body class="flex flex-col h-[100%] bg-[var(--bg-color)] text-[var(--text-color)] font-[Francois One]">
+    <body class="flex flex-col h-full bg-[var(--bg-color)] text-[var(--text-color)] font-[Francois One]">
         <header class="m-8 flex flex-col items-center gap-3">
             <?php require "pages/nav.php"; ?>
-            <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="max-w-[100px] rounded-full mt-[10%] border-3 border-[var(--primary-color)]">
+            <!--profile image header-->
+            <div class="relative w-full mt-8 h-125 flex justify-center">
+                <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="w-40 rounded-full border-4 border-[var(--primary-color)] absolute z-10 top-85">
+                <img src="media/profile-background.jpg" alt="Low-angle-shot photograph of a tall tree on a bright sunny day" class="w-200 h-100 object-cover rounded-4xl absolute z-0">
+            </div>
             <h1 class="font-bold text-4xl">Patricia Sunday</h1>
             <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">Computer Programming and Analysis student in Ottawa, Ontario</p>
         </header>
@@ -34,7 +38,7 @@ Last Edited: August 30, 2025
                         <div class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-[var(--bg-color)] h-full w-full overflow-y-auto">
                             <ul class="list-disc">
                                 <li class="list-gap">I'm a programming student and aspiring full-stack developer</li>
-                                <li class="list-gap">Currently, I'm self-learning Python to become more familiar with software automation and its application in personal projects</li>
+                                <li class="list-gap">Currently, I'm self-learning Python to deepen my understanding of software automation and its application in daily life and creative projects</li>
                                 <li class="list-gap">
                                     In my free time, I'm likely to be found...
                                     <ul class="list-[circle] pl-5">
@@ -64,7 +68,7 @@ Last Edited: August 30, 2025
                             <ul class="list-disc">
                                 <li class="list-gap">Currently, I've completed my 3rd term in Algonquin College's School of Advanced Technology</li>
                                 <li class="list-gap">The certification I am studying for is the 3-year Advanced Diploma in
-                                    <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/">Computer Programming and Analysis</a>
+                                    <a href="https://www.algonquincollege.com/sat/program/computer-programming-and-analysis/" class="font-medium">Computer Programming and Analysis</a>
                                 </li>
                                 <li class="list-gap">My studying began in September 2024</li>
                                 <li class="list-gap">
@@ -87,5 +91,4 @@ Last Edited: August 30, 2025
 
 <!--
 todo: add boards for each page (3 more boards total)
-todo: add image stack for display pic & background (like pinterest profile on ipad)
 -->
