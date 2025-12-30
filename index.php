@@ -5,6 +5,7 @@ Last Edited: August 30, 2025
 -->
 
 <!DOCTYPE html>
+<!--using h-full to allow child <body> element to span full screen height-->
 <html lang="en" class="h-full">
     <head>
         <title>Patricia Sunday Portfolio</title>
@@ -15,26 +16,29 @@ Last Edited: August 30, 2025
         <link rel="stylesheet" href="/styles/output.css">
         <script src="scripts/flip-card.js" defer></script>
     </head>
-    <!--flex-col so main can grow to push footer to bottom of page-->
-    <body class="flex flex-col h-full bg-[var(--bg-color)] text-[var(--text-color)] font-[Francois One]">
-        <header class="m-8 flex flex-col items-center gap-3">
-            <?php require "pages/nav.php"; ?>
-            <!--profile image header-->
-            <div class="relative w-full mt-8 h-125 flex justify-center">
-                <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="w-40 rounded-full border-4 border-[var(--primary-color)] absolute z-10 top-85">
-                <img src="media/profile-background.jpg" alt="Low-angle-shot photograph of a tall tree on a bright sunny day" class="w-200 h-100 object-cover rounded-4xl absolute z-0">
-            </div>
-            <h1 class="font-bold text-4xl">Patricia Sunday</h1>
-            <p class=" mb-[10%] text-[var(--subtitle-color)] font-medium">Computer Programming and Analysis student in Ottawa, Ontario</p>
+    <!--using h-full and flex-col so <main> can grow to push footer to bottom of page, regardless of <body> content-->
+    <body class="h-full flex flex-col bg-[var(--bg-color)] text-[var(--text-color)]">
+        <header class="flex flex-col items-center mt-8 gap-8 mb-30 mx-8">
+                <?php require "pages/nav.php"; ?>
+                <!--profile header image group-->
+                <div class="relative w-full h-98 flex justify-center">
+                    <img src="media/profile-background.jpg" alt="Low-angle-shot photograph of a tall tree on a bright sunny day" class="w-full max-w-225 h-75 object-cover rounded-4xl">
+                    <img src="media/headshot.png" alt="Circle-shaped picture of myself" class="absolute w-40 rounded-full border-4 border-[var(--primary-color)] top-60">
+                </div>
+                <!--header title group-->
+                <div class="flex flex-col items-center">
+                    <h1 class="font-bold text-4xl">Patricia Sunday</h1>
+                    <p class="text-center text-lg text-[var(--subtitle-color)] font-medium">Computer Programming and Analysis student in Ottawa, Ontario</p>
+                </div>
         </header>
         <main class="grow m-8">
-            <!--flip cards for boards & corresponding text. grid layout for board pics-->
-            <div class="flex flex-col md:flex-row justify-center gap-[30px]">
+            <!--info board flip-cards group. grid layout for board pics-->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-15">
                 <!-- personal info section -->
                 <section>
                     <!--board card-->
                     <div class="grid grid-cols-4 grid-rows-2 max-w-150 max-h-80 rounded-4xl shadow-md/30 transform hover:-translate-y-1 duration-250 text-sm lg:text-base">
-                        <!--interactive text face-->
+                        <!--text face of card-->
                         <div class="text-card hidden rounded-l-4xl row-span-2 col-span-3 border-r-2 border-[var(--bg-color)] h-full w-full overflow-y-auto">
                             <ul class="list-disc">
                                 <li class="list-gap">I'm a programming student and aspiring full-stack developer</li>
@@ -52,6 +56,7 @@ Last Edited: August 30, 2025
                                 </li>
                             </ul>
                         </div>
+                        <!--picture face of card-->
                         <img src="media/me.jpeg" alt="Picture of myself (Patricia)" class="image-card w-full h-full object-cover row-span-2 col-span-3 rounded-l-4xl border-r-2 border-[var(--bg-color)]">
                         <img src="media/greece.jpeg" alt="Sea horizon and trees on Greek island" class="w-full h-full object-cover rounded-tr-4xl border-b-2 border-[var(--bg-color)]">
                         <img src="media/cafe.png" alt="The hands of 3 friends and I, holding out drinks from a cafe" class="w-full h-full object-cover rounded-br-4xl">
