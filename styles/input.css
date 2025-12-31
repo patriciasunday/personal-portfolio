@@ -16,7 +16,7 @@
 }
 
 /*for contactme.php --flex structure for input and corresponding label*/
-.input-group-flex{
+.input-flex{
     @apply flex;
     @apply flex-col;
 }
