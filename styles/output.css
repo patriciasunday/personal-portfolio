@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -190,20 +189,11 @@
   .top-60 {
     top: calc(var(--spacing) * 60);
   }
-  .z-0 {
-    z-index: 0;
-  }
-  .z-10 {
-    z-index: 10;
-  }
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
   .row-span-2 {
     grid-row: span 2 / span 2;
-  }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
   }
   .m-8 {
     margin: calc(var(--spacing) * 8);
@@ -226,20 +216,8 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mb-15 {
-    margin-bottom: calc(var(--spacing) * 15);
-  }
-  .mb-20 {
-    margin-bottom: calc(var(--spacing) * 20);
-  }
-  .mb-25 {
-    margin-bottom: calc(var(--spacing) * 25);
-  }
   .mb-30 {
     margin-bottom: calc(var(--spacing) * 30);
-  }
-  .mb-\[10\%\] {
-    margin-bottom: 10%;
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -274,6 +252,9 @@
   .h-98 {
     height: calc(var(--spacing) * 98);
   }
+  .h-\[100\%\] {
+    height: 100%;
+  }
   .h-full {
     height: 100%;
   }
@@ -283,8 +264,11 @@
   .max-h-90 {
     max-height: calc(var(--spacing) * 90);
   }
-  .min-h-\[200px\] {
-    min-height: 200px;
+  .min-h-40 {
+    min-height: calc(var(--spacing) * 40);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-15 {
     width: calc(var(--spacing) * 15);
@@ -295,12 +279,6 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
-  .w-225 {
-    width: calc(var(--spacing) * 225);
-  }
-  .w-\[5rem\] {
-    width: 5rem;
-  }
   .w-full {
     width: 100%;
   }
@@ -310,11 +288,23 @@
   .max-w-225 {
     max-width: calc(var(--spacing) * 225);
   }
-  .min-w-40 {
-    min-width: calc(var(--spacing) * 40);
+  .min-w-50 {
+    min-width: calc(var(--spacing) * 50);
   }
-  .min-w-\[45\%\] {
-    min-width: 45%;
+  .min-w-100 {
+    min-width: calc(var(--spacing) * 100);
+  }
+  .min-w-200 {
+    min-width: calc(var(--spacing) * 200);
+  }
+  .min-w-300 {
+    min-width: calc(var(--spacing) * 300);
+  }
+  .min-w-500 {
+    min-width: calc(var(--spacing) * 500);
+  }
+  .min-w-1000 {
+    min-width: calc(var(--spacing) * 1000);
   }
   .min-w-\[50\%\] {
     min-width: 50%;
@@ -384,9 +374,6 @@
   }
   .gap-\[20px\] {
     gap: 20px;
-  }
-  .self-auto {
-    align-self: auto;
   }
   .self-center {
     align-self: center;
@@ -479,14 +466,14 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
-  }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
   .px-\[50px\] {
     padding-inline: 50px;
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .py-\[20px\] {
     padding-block: 20px;
@@ -507,10 +494,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-base {
-    font-size: var(--text-base);
-    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -547,9 +530,6 @@
   }
   .text-\[var\(--text-color\)\] {
     color: var(--text-color);
-  }
-  .text-white {
-    color: var(--color-white);
   }
   .italic {
     font-style: italic;
@@ -613,11 +593,6 @@
       gap: calc(var(--spacing) * 10);
     }
   }
-  .lg\:flex-row {
-    @media (width >= 64rem) {
-      flex-direction: row;
-    }
-  }
   .lg\:text-base {
     @media (width >= 64rem) {
       font-size: var(--text-base);
@@ -648,7 +623,7 @@
     }
   }
 }
-.input-group-flex {
+.input-flex {
   display: flex;
   flex-direction: column;
 }
